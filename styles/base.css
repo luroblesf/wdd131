@@ -1,0 +1,171 @@
+body {
+    display: grid;
+    margin: 0;
+    height: 100vh;
+    grid-template: auto 1fr auto / 300px 1fr auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header {
+    background: rgb(7, 59, 99);
+    grid-column: 1 / 4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+#course-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(255, 253, 253);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main */
+
+main {
+    background: rgb(255, 255, 255);
+    grid-column: 1 / 4;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: rgb(7, 59, 99);
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sections */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    flex: 1;
+    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 1px solid rgb(7, 59, 99);
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+h2 {
+    background-color: rgb(7, 59, 99);
+    color: white;
+    padding: 1.7rem;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about-me-image {
+    float: right;
+    margin: 5px 42px 0 3px;
+    vertical-align: bottom;
+}
+
+#about-me {
+    float: left;
+    width: 370px;
+    height: 50px;
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    color: black;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#flag-image {
+    float: left;
+    margin: 10px 0 0 3px;
+    vertical-align: bottom;
+    margin: 3px;
+    padding: 3px;
+}
+
+#flag-info {
+    float: right;
+    width: 370px;
+    color: black;
+    text-align: justify;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+h3 {
+    color: rgb(7, 59, 99);
+    font-size: larger;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+
+ul {
+    color: black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.50rem;
+}
+
+
+/* Footer */
+
+footer {
+    background: rgb(7, 59, 99);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+#lastModified {
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+span.header {
+    display: block;
+}
+
+/* Navigation */
+
+.navigation {
+    background-color: #454748;
+    margin: 0;
+    padding: 0.1rem;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+nav a {
+    display: block;
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(232, 235, 13);
+}
