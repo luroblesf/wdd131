@@ -1,0 +1,47 @@
+@media (min-width: 740px){
+    body {
+        
+        font-size: 1.2rem;
+   
+    }
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        display: grid;
+    }
+    nav ul {
+        display: flex;
+        justify-content: right;
+    }
+    nav ul li {
+        margin-right: 1rem;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        max-width: 600px;
+        height: auto;
+    }
+    .grid-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    #menu {
+        display: none;
+    }
+    .navigation {
+        flex-direction: row;
+    }
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        font-size: medium;
+    }
+}
+
