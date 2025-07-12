@@ -123,14 +123,12 @@ footer {
     grid-column: 1 / 4;
 }
 
-#lastModifiedDate {
-    color: white;
+#lastModified {
+    color: yellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
 }
-.highlight {
-    color: white;
-}
+
 span.header {
     display: block;
 }
@@ -163,4 +161,3 @@ nav a:hover {
     text-decoration: underline;
     color: rgb(232, 235, 13);
 }
-
