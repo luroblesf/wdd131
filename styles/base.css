@@ -115,7 +115,6 @@ ul {
     padding: 1.50rem;
 }
 
-
 footer {
     background: rgb(7, 59, 99);
     padding: 2rem;
@@ -123,10 +122,8 @@ footer {
     grid-column: 1 / 4;
 }
 
-#lastModified {
-    color: yellow;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
+.highlight {
+    color: white;
 }
 
 span.header {

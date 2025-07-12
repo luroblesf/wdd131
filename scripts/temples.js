@@ -1,18 +1,23 @@
-function getCopyrightYear() {
-    const year = new Date().getFullYear();
-    return `&copy; ${year}`;
+function getCurrentYear() {
+    return new Date().getFullYear();
 }
-document.getElementById("currentYear").innerHTML = getCopyrightYear();
+
+document.addEventListener("DOMContentLoaded", function () {
+    var yearSpan = document.querySelector("#year span.highlight");
+    if (yearSpan) {
+        yearSpan.textContent = getCurrentYear();
+    }
+});
 
 
-function getLastModified() {
-    const lastModified = new Date(document.lastModified);
-    return `Last Modified: ${lastModified}`;
-}
-document.getElementById("lastModified").innerHTML = getLastModified();
+document.addEventListener("DOMContentLoaded", function () {
+    var lastModifiedDate = document.lastModified;
 
-function updatePageVisitsCounter() {
-}
+    var modifiedParagraph = document.querySelector("footer p:nth-of-type(2)");
+    if (modifiedParagraph) {
+        modifiedParagraph.textContent = "Last modified: " + lastModifiedDate;
+    }
+});
 
 
 
