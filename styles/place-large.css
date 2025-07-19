@@ -1,53 +1,45 @@
 @media (min-width: 740px) {
-
     :root {
-            --primary-color: rgb(8, 133, 49);
-            --primary-font-color: rgb(0, 0, 0);
-        }
-
+        --primary-color: rgb(8, 133, 49);
+        --primary-font-color: rgb(0, 0, 0);
+    }
     img {
-            width: 100%;
-            height: auto;
-        }
-        
+        width: 100%;
+        height: auto;
+    }
     header {
         margin-top: -20px;
         font-size: x-large;
         color: white;
-        }
-
-     h2 {
+    }
+    h2 {
         padding: 1em;
         margin: auto;
         background-color: var(--primary-color);
         color: white;
         text-align: left;
         font-size: x-large;
-        }
-
+    }
     .label {
         font-weight: bold;
         margin-right: 5px;
         text-align: right;
         width: 50%;
         font-size: medium;
-        }
-    
+    }
     .value {
         color: var(--primary-font-color);
         text-align: left;
         width: 50%;
         font-size: 14px;
         margin-left: 5px;
-        }
-    
+    }
     .content-container {
         position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        }
-    
+    }
     .flexbox-item-1 {
         position: absolute;
         top: -700px;
@@ -56,18 +48,17 @@
         background-color: white;
         border: none;
         left: 70px;
-        }
-    
+    }
     .flexbox-item-2 {
         position: absolute;
         bottom: -300px;
         left: 700px;
         width: 100%;
-        background-color:white;
+        background-color: white;
         right: 80px;
-        } 
-
+    }
     .image-weather img {
         width: 40%;
         height: auto;
-    }}
+    }
+}
