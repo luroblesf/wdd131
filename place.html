@@ -8,17 +8,17 @@
     <meta name="author" content="Lucia Robles">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
-    <script src="scripts/place.js" defer></script>
+    <script defender src="scripts/place.js"></script>
 </head>
 <body>
     <header>
         <h1>Guatemala</h1>
     </header>
     <main>
-            <picture>
+        <picture>
             <source media="(min-width:781px)" srcset="images/antigua.webp">
             <img src="images/quetzal.webp" alt="Quetzal" width="1000" height="667">
-            </picture>
+        </picture>
         <div class="content-container">
             <div class="flexbox-item-1">
                 <h2>Data</h2>
@@ -56,33 +56,31 @@
                         <span class="value">.gt</span>
                     </div>
                 </div>
-            <div class="flexbox-item-2">
-                <h2>Weather</h2>
-                <div class="image-weather">
-                    <img src="images/weather_icon.svg" alt="Icon" width="80">
+                <div class="flexbox-item-2">
+                    <h2>Weather</h2>
+                    <div class="image-weather">
+                        <img src="images/weather_icon.svg" alt="Icon" width="80">
+                    </div>
+                    <div class="label-container">
+                        <div class="data-item">
+                            <span class="label">Temperature:</span>
+                            <span id="temperature" class="value"></span>
+                        </div>
+                        <div class="data-item">
+                            <span class="label">Conditions:</span>
+                            <span class="value">Partly Cloundy</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="label">Wind:</span>
+                            <span class="value" id="wind"></span>
+                        </div>
+                        <div class="data-item">
+                            <span class="label">Wind Chill:</span>
+                            <span class="value" id="windChill"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="label-container">
-                    <div class="data-item">
-                        <span class="label">Temperature:</span>
-                        <span id="temperature" class="value"></span>
-                    </div>
-                    <div class="data-item">
-                        <span class="label">Conditions:</span>
-                        <span class="value">Partly Cloundy</span>
-                    </div>
-                    <div class="data-item">
-                        <span class="label">Wind:</span>
-                        <span class="value" id="wind"></span>
-                    </div>
-                    <div class="data-item">
-                        <span class="label">Wind Chill:</span>
-                         <span class="value" id="windChill"></span>
-                    </div>
-            </div>
-        </div>
     </main>
-
-
     <footer>
         <p id="year">&copy; <span class="highlight">YYYY</span> Lucia Robles | Guatemala</p>
         <p id="lastModifiedDate" class="highlight">Last modified: </p>
