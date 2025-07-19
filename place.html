@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Place - Lucia Robles</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Lucia Robles">
+    <meta name="author" content="Lucia Robles">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Guatemala</h1>
+    </header>
+    <main>
+            <picture>
+            <source media="(min-width:781px)" srcset="images/antigua.webp">
+            <img src="images/quetzal.webp" alt="Quetzal" width="1000" height="667">
+            </picture>
+        <div class="content-container">
+            <div class="flexbox-item-1">
+                <h2>Data</h2>
+                <div class="label-container">
+                    <div class="data-item">
+                        <span class="label">Area:</span>
+                        <span class="value">170,160 sq. Km</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Population:</span>
+                        <span class="value">18,694,176</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Capital:</span>
+                        <span class="value">Guatemala City</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Language:</span>
+                        <span class="value">Spanish</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Currency:</span>
+                        <span class="value">Guatemalan quetzal (GTQ)</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Time Zone:</span>
+                        <span class="value">UTC-6</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Calling Code:</span>
+                        <span class="value">+502</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Internet TLD:</span>
+                        <span class="value">.gt</span>
+                    </div>
+                </div>
+            <div class="flexbox-item-2">
+                <h2>Weather</h2>
+                <div class="image-weather">
+                    <img src="images/weather_icon.svg" alt="Icon" width="80">
+                </div>
+                <div class="label-container">
+                    <div class="data-item">
+                        <span class="label">Temperature:</span>
+                        <span id="temperature" class="value"></span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Conditions:</span>
+                        <span class="value">Partly Cloundy</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Wind:</span>
+                        <span class="value" id="wind"></span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Wind Chill:</span>
+                         <span class="value" id="windChill"></span>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p id="year">&copy; <span class="highlight">YYYY</span> Lucia Robles | Guatemala</p>
+        <p id="lastModifiedDate" class="highlight">Last modified: </p>
+    </footer>
+</body>
+</html>
