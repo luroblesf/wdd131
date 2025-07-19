@@ -1,6 +1,7 @@
 function getCurrentYear() {
     return new Date().getFullYear();
 }
+
 document.addEventListener("DOMContentLoaded", function () {
     var yearSpan = document.querySelector("#year span.highlight");
     if (yearSpan) {
