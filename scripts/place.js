@@ -1,12 +1,20 @@
-function getCurrentYear() {
-    return new Date().getFullYear();
+function getCopyrightYear() {
+    const year = new Date().getFullYear();
+    return `&copy; ${year}`;
 }
-document.addEventListener("DOMContentLoaded", function () {
-    var yearSpan = document.querySelector("#year span.highlight");
-    if (yearSpan) {
-        yearSpan.textContent = getCurrentYear();
-    }
-});
+document.getElementById("currentYear").innerHTML = getCopyrightYear();
+
+/* Last Modified */
+
+function getLastModified() {
+    const lastModified = new Date(document.lastModified);
+    return `Last Modified: ${lastModified}`;
+}
+document.getElementById("lastModified").innerHTML = getLastModified();
+
+function updatePageVisitsCounter() {
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     var lastModifiedDate = document.lastModified;
 
