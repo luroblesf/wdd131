@@ -1,0 +1,159 @@
+* {
+    --primary-color:  rgb(7, 59, 99);
+    --primary-font-color: rgb(7, 59, 99);
+    
+}
+body {
+    max-width: auto;
+    min-height: auto;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    grid-column: 1/3;
+    color: #ddd;
+    background-color: var(--primary-color);
+    padding: 1rem 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin: 1.2rem;
+}
+h1 {
+    padding: 1rem;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+h2 {
+    padding: 1rem;
+    margin: auto;
+    color: var(--primary-font-color);
+    text-align: center;
+    font-size: x-large;
+}
+#text {
+    padding: 1em 1em 0;
+    margin: auto;
+    font-size: larger;
+    line-height: 1.5;
+    color: var(--primary-font-color);
+    text-align: center;
+}
+footer {
+    background: var(--primary-color);;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.highlight {
+    color: white;
+}
+nav ul {
+    list-style-type: none;
+}
+nav a{
+    display: block;
+    font-size: medium;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(232, 235, 13);
+}
+nav {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+    right: 1rem;
+}
+#menu::before {
+	content: "☰";
+	color: white;
+}
+#menu.open::before {
+	content: "❎";
+}
+.open a {
+    display: block;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    max-width: 800px;
+}
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    color: white;
+    width: 100%;
+}
+.navigation a:hover {
+    text-decoration: underline;
+    color: rgb(232, 235, 13);
+
+}
+.open a {
+    display: block;
+    font-size: medium;
+}
+.hidden {
+    display: none;
+}
+main,
+footer {
+    margin: 2rem;
+    position: relative;
+}
+h1 {
+    text-align: center;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+section {
+    margin: 0.5rem;
+    padding: 0.35rem;
+    background-color: #eee;
+    border: 1px solid #534b59;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b8bde1f5;
+    color: #242d33;
+}
+section > h2 {
+    margin: 5px;
+}
+section > p {
+    margin: 3px;
+}
+img {
+    width: auto;
+    max-width: 400px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    filter: drop-shadow(5px 5px 5px #555);
+    margin: 10px;
+}
+.label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
