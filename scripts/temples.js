@@ -1,13 +1,7 @@
-function getCurrentYear() {
-    return new Date().getFullYear();
-}
+const currentYear = document.getElementById("currentyear");
+currentYear.innerText = new Date().getFullYear();
 
-document.addEventListener("DOMContentLoaded", function () {
-    var yearSpan = document.querySelector("#year span.highlight");
-    if (yearSpan) {
-        yearSpan.textContent = getCurrentYear();
-    }
-});
+document.querySelector("#lastModified").innerHTML = `Last modified: ${document.lastModified}`;
 
 
 document.addEventListener("DOMContentLoaded", function () {
