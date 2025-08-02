@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         productSelect.appendChild(option);
     });
 
-    const form = document.querySelector('form.wf');
+    const form = document.querySelector('form.wf1');
     form.addEventListener('submit', function (event) {
         let reviewCount = localStorage.getItem('reviewCount') || 0;
         reviewCount = parseInt(reviewCount) + 1;
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    const form = document.querySelector('form.wf');
+    const form = document.querySelector('form.wf1');
     form.addEventListener('submit', function (event) {
         event.preventDefault();  
 
@@ -74,4 +74,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         form.reset();
     });
+    
 });
+
+let visits = localStorage.getItem('contadorVisitas');
+if (!visits) {
+    visits = 0;
+}
+visits++;
+localStorage.setItem('contadorVisitas', visits);
+document.getElementById('contador').textContent = visits;
