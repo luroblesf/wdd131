@@ -27,7 +27,7 @@ header {
 }
 
 .logo {
-    width: 300px;
+    width: 250px;
     height: 150px;
     margin: 0 auto;
     display: flex;
@@ -42,7 +42,7 @@ img {
 }
 
 .intro img{
-    margin: 0 auto;
+    padding: 1rem;
     width: 70%;
     height: auto;
     display: block;
@@ -50,6 +50,7 @@ img {
 
 .intro p {
     text-align: center;
+    padding-bottom: 0.5rem;
 }
 
 
