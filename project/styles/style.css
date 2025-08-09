@@ -62,6 +62,10 @@ h1 {
     text-align: center;
     font-family: 'dm serif text', serif;
 }
+.welcome h1 {
+    margin-top: 2rem;
+    color: var(--color-three);
+}
 nav ul {
     list-style-type: none;
 }
@@ -175,7 +179,7 @@ button {
     background-color: var(--color-two);
     font-size: medium;
     text-align: center;
-    margin: 2.3rem;
+    margin-left: 6%;
 }
 .contact {
     padding: 2.5rem;
