@@ -1,0 +1,295 @@
+:root {
+    --color-one: #582caf;
+    --color-two: #f0d7f7;
+    --color-three: #ffffff;
+    --color-four: #ff66c4;
+    --color-five: #000000;
+
+}
+* {
+    margin: 0;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Roboto Flex', sans-serif;
+    min-height: 1vh;
+    background-color: var(--color-three);
+}
+header, footer {
+    background: var(--color-two);
+    padding: 1.5rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    color: var(--color-two);
+    font-size: large;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: var(--color-one);
+}
+.logo {
+    width: 250px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+.intro img{
+    padding: 2.5rem;
+    align-items: center;
+    width: 80%;
+}
+.intro p {
+    text-align: center;
+    font-family: 'Roboto Flex', sans-serif;
+    margin-bottom: 5%;
+}
+h1 {
+    color: var(--color-one);
+    font-size: 2.5rem;
+    margin: 1rem;
+    text-align: center;
+    font-family: 'dm serif text', serif;
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    font-size: medium;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: var(--color-three);
+}
+nav {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--color-one);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+#menu::before {
+    content: "☰";
+    color: var(--color-one);
+    font-weight: bold;
+}
+#menu.open::before {
+    content: "❎";
+}
+.open a {
+    display: block;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    max-width: 800px;
+}
+.navigation a {
+    display: none;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    color: var(--color-one);
+    width: 100%;
+}
+.navigation a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--color-one);
+}
+.open a {
+    display: block;
+    font-size: medium;
+}
+.hidden {
+    display: none;
+}
+.icons img{
+    width: 2rem;
+}
+footer p {
+    margin: 0;  
+    padding: 0.3rem;
+    text-align: center;
+    color: var(--color-five);
+    font-size: medium;
+    font-family: 'dm serif text', serif;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+section {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--color-one);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-one);
+    color:var(--color-three);
+}
+section>h2 {
+    margin: 8px;
+    font-family: 'dm serif text', serif;
+}
+section>p {
+    margin: 3px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+section>img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.label {
+    font-family: 'roboto flex', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+button {
+    background-color: var(--color-two);
+    font-size: medium;
+    text-align: center;
+    margin: 2.3rem;
+}
+.contact {
+    padding: 2.5rem;
+    min-height: 20rem;
+    font-size: 16px;
+    background-color: var(--color-three);
+}
+.wf fieldset {
+    margin: 2rem auto;
+    border: 1px solid var(--color-five);
+    border-radius: 8px;
+    padding: .5rem 2%;
+    max-width: 425px;
+    background-color: var(--color-two);
+}
+.wf input[type="text"],input[type="tel"],input[type="email"],
+.wf select {
+    background-color: var(--color-three);
+    display: block;
+    border: 1px solid var(--color-five);
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: var(--color-five);
+    width: 900%;
+    max-width: 400px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    appearance: none;
+}
+.wf textarea {
+    background-color: var(--color-three);
+    display: block;
+    border: solid 1px var(--color-five);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--color-five);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.wf input[type="submit"] {
+    border: none;
+    background: var(--color-one);
+    color: var(--color-two);
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 45%;
+    max-width: 400px;
+    margin-left: 8rem;
+}
+.wf input[type="submit"]:hover {
+    text-shadow: 1px 1px 1rem var(--color-four);
+}
+
+.wf input[type="submit"]:active {
+    background-image: linear-gradient(#000000, #5d5e5e);
+}
+.optional {
+    font-size: 0.8rem;
+    color: var(--color-five);
+    font-style: italic;
+}
+.review h1,
+.review h2 {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 6px;
+    max-width: 600px;
+    margin: 2rem auto;
+    color: var(--color-five);
+    font-family: 'DM Serif Text', serif;
+}
+.wf label:not(.star-rating label) {
+    display: block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: bold;
+}
+.contact p {
+    text-align: center;
+    color: var(--color-five);
+    font-family: 'roboto flex', sans-serif;
+
+}
+.contact-two {
+    margin: 18%;
+    text-align: center;
+    color: var(--color-two);
+    font-size: medium;
+    background-color: var(--color-five);
+}
+.contact-two p {
+    color: var(--color-three);
+    font-family: 'roboto flex', sans-serif;
+}
+.contact-two h2 {
+    color: var(--color-two);
+    font-family: 'dm serif text', serif;
+}
+#customOrder {
+    padding: 5rem;
+    text-align: center;
+}
+#customOrder p{
+    text-align: left;
+    font-family: 'roboto flex', sans-serif;
+}
+#customOrder h2 {
+    text-align: left;
+    color: var(--color-three);
+    text-decoration: underline;
+    font-family: 'dm serif text', serif;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles/form-base.css">
+    <script src="scripts/formP.js" defer></script>
+</head>
+
+<body>
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/jules.webp" alt="Jules Cake Shop Logo">
+            </a>
+            <button type="button" id="menu"></button>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </nav>
+        </header>
+
+<h1>Make an Order</h1>
+<main class="contact">
+    <p>We are here to help you with your cake orders and inquiries.<br>
+        Please fill out the form below, and we will get back to you as soon as possible.</p>
+
+    <form id="userForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <button type="button" onclick="submitForm()">Enviar</button>
+    </form>
+    <div id="formData"></div>
+
+<section class="contact-two">
+    <h2>Contact Information</h2>
+    <p>
+    <Address>123 Cake St, Dessert City, CA 12345</Address>
+    </p>
+    <p>Email: info@julescakeshop.com</p>
+    <p>Phone: +1 (234) 567-890</p>
+
+</section>
+</main>
+
+
+
+
+<footer class="icons">
+    <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram-icon.webp" alt="Instagram icon">
+    </a>
+    <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook-icon.webp" alt="Fb icon">
+    </a>
+    <a href="https://x.com" target="_blank">
+        <img src="images/x-icon.webp" alt="X icon">
+    </a>
+
+    <p>&copy; 2024 Jules Cake Shop</a> All rights reserved.</p>
+    <p>Privacy Policy</p>
+    <p>Terms of Service</p>
+</footer>
+</body>
+
+</html>

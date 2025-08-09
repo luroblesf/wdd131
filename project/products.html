@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="styles/style-large.css">
     <script defer src="scripts/julesCake.js"></script>
 </head>
+
 <body>
     <header>
         <a id="logo_link" href="index.html">
@@ -30,53 +32,34 @@
                 <li><a href="order.html">Order</a></li>
             </ul>
         </nav>
-    </header>
+    </header>  
     <main>
-        <section class="welcome">
-            <picture><h1>Welcome to Jule's Cake Shop</h1>
-                <source media="(min-width:781px)" srcset="images/cakes.webp">
-                <img src="images/cakes.webp" alt="Cakes" loading="lazy" width="166" height="68">
-            </picture>
-        </section>
-         
-        <section class="grid-container">
-        <div class="intro">
-            <picture>
-                <source media="(min-width:781px)" srcset="images/cake-one.webp">
-                <img src="images/cake-one.webp" alt="Cakes"  loading=lazy width="700" height="469">
-            </picture>
-            <p>Your one-stop destination for delicious cakes and pastries.</p>
+       <div class="products">
+            <h1>Our Products</h1>
+            <button><a href="#" id="allcake">All Products</a></button>
+            <button><a href="#" id="weddingcake">Wedding Cakes</a></button>
+            <button><a href="#" id="birthdaycake">Birthday Cakes</a></button>
         </div>
-        <div class="intro">
-            <picture>
-                <source media="(min-width:781px)" srcset="images/cake-two.webp">
-                <img src="images/cake-two.webp" alt="Cakes" loading=lazy width="700" height="468">
-            </picture>
-            <p>At Jules Cake Shop, we specialize in creating custom cakes and pastries for all occasions.</p>
-        </div>
-        <div class="intro">
-            <picture>
-                <source media="(min-width:781px)" srcset="images/cake-three.webp">
-                <img src="images/cake-three.webp" alt="Cakes" loading=lazy width="700" height="468">
-            </picture>
-            <p>Whether you're celebrating a birthday, wedding, or any special event. We have the perfect treat for you.</p>
-        </div>
+
+            <div class="prod-grid"></div>
         </section>
     </main>
+
     <footer class="icons">
         <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram-icon.webp" alt="Instagram icon">
+            <img src="images/instagram-icon.webp" alt="Instagram icon" loading="lazy">
         </a>
         <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook-icon.webp" alt="Fb icon">
+            <img src="images/facebook-icon.webp" alt="Fb icon" loading="lazy">
         </a>
         <a href="https://x.com" target="_blank">
-            <img src="images/x-icon.webp" alt="X icon">
+            <img src="images/x-icon.webp" alt="X icon" loading="lazy">
         </a>
-
-        <p>&copy; 2024 Jule's Cake Shop</a>   All rights reserved.</p>
+    
+        <p>&copy; 2024 Jules Cake Shop</a> All rights reserved.</p>
         <p>Privacy Policy</p>
         <p>Terms of Service</p>
     </footer>
-</body>
-</html>
+    </body>
+    
+    </html>

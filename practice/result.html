@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Cake Shop</title>
+    <meta name="description" content="Jules Cake Shop - Custom cakes and pastries for all occasions.">
+    <meta name="author" content="Lucia Robles">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <script defer src="scripts/formCake.js"></script>
+</head>
+
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/jules.webp" alt="Jules Cake Shop Logo">
+        </a>
+        <button type="button" id="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+       <h1>Customer Order</h1>
+        <section id="customOrder">
+            <h2>Order Summary</h2>
+            <p>Thank you for your order!</p>
+            <p> We are going to contact you shortly.</p><br>
+
+                <p><strong>Nombre:</strong> <span id="displayName"></span></p>
+                <p><strong>Correo Electrónico:</strong> <span id="displayEmail"></span></p>
+                <p><strong>Mensaje:</strong> <span id="displayMessage"></span></p>
+            
+                <script>
+                    // Obtener los datos del formulario
+                    const name = localStorage.getItem('name');
+                    const email = localStorage.getItem('email');
+                    const message = localStorage.getItem('message');
+
+                    // Mostrar los datos en la página
+                    document.getElementById('displayName').textContent = name;
+                    document.getElementById('displayEmail').textContent = email;
+                    document.getElementById('displayMessage').textContent = message;
+
+                </script>
+           
+
+            <div id="orderDetails"></div>
+                <p><strong>Total of Visits:</strong> <span id="reviewCount">0</span></p>
+        </section>
+    </main>
+
+        <footer class="icons">
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-icon.webp" alt="Instagram icon">
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-icon.webp" alt="Fb icon">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="images/x-icon.webp" alt="X icon">
+            </a>
+        
+            <p>&copy; 2024 Jule's Cake Shop</a> All rights reserved.</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+        </footer>
+        </body>
+        
+        </html>
