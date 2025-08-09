@@ -33,7 +33,7 @@
         flex: 1 1 100%;
         font-size: larger;
     }
-    .products h1 {
+    .product-header h1 {
         margin-top: -15%;
         text-align: center;
         color: #ffffff;
