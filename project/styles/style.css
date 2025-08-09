@@ -204,7 +204,7 @@ button {
     padding: 0.75rem;
     color: var(--color-five);
     width: 900%;
-    max-width: 400px;
+    max-width: 350px;
     margin-top: 5px;
     margin-bottom: 10px;
     appearance: none;
@@ -217,7 +217,7 @@ button {
     padding: .75rem;
     color: var(--color-five);
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     appearance: none;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -230,7 +230,7 @@ button {
     padding: 0.5rem;
     width: 45%;
     max-width: 400px;
-    margin-left: 8rem;
+    margin-left: 7rem;
 }
 .wf input[type="submit"]:hover {
     text-shadow: 1px 1px 1rem var(--color-four);
@@ -269,7 +269,7 @@ button {
 
 }
 .contact-two {
-    margin: 18%;
+    margin: 10%;
     text-align: center;
     color: var(--color-two);
     font-size: medium;
