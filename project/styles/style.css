@@ -181,6 +181,22 @@ button {
     text-align: center;
     margin-left: 6%;
 }
+.product-categories {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.product-categories button {
+    background-color: var(--color-two);
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    font-size: medium;
+    cursor: pointer;
+}
+.product-categories button:hover {
+    background-color: var(--color-four);
+}
 .contact {
     padding: 2.5rem;
     min-height: 20rem;

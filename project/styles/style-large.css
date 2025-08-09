@@ -129,6 +129,20 @@
         text-align: center;
         margin-left: 12rem;
     }
+    .product-categories {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .product-categories button {
+        background-color: var(--color-two);
+        border: none;
+        padding: 1rem 2rem;
+        margin: 0 1rem;
+        font-size: medium;
+        cursor: pointer;
+        margin-top: -5%;
+    }
     .welcome img {
         width: 300%;
         height: auto;
